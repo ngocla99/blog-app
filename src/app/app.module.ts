@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { ProfileModule } from './profile/profile.module';
 import { SharedModule } from './shared/shared.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [AppComponent, FooterComponent, HeaderComponent],
@@ -19,8 +20,7 @@ import { SharedModule } from './shared/shared.module';
     HttpClientModule,
     ProfileModule,
     SharedModule,
+    AuthModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent],
 })
 export class AppModule {}
