@@ -7,10 +7,11 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 
 import { ProfileModule } from './profile/profile.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [AppComponent, FooterComponent, HeaderComponent],
-  imports: [BrowserModule, AppRoutingModule, ProfileModule],
+  imports: [BrowserModule, AppRoutingModule, ProfileModule, AuthModule],
   providers: [],
   bootstrap: [AppComponent],
 })
